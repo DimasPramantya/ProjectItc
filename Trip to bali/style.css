@@ -1,0 +1,478 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    min-height: 100vh;
+}
+
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2em;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* navigasi header */
+.main-nav{
+    padding: 20px 0;
+    background-color: rgba(0,0,0,0.2);
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+.main-nav h4{
+    font-weight: normal;
+    font-family: 'Ms Madi', cursive;
+    font-style: italic;
+    font-size: 1.3em;
+}
+
+
+.main-nav ul{
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+}
+
+
+.main-nav ul li a{
+    color: white;
+    padding: 10px;
+}
+
+.main-nav ul li a:hover{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Header Background */
+
+.top-background{
+    height: 70vh;
+}
+
+.home-background{
+    background-image: url("img/test1.6.jpg");
+    background-size: cover;
+}
+
+
+.background{
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+}
+
+main {
+    margin: 20px 15%;
+}
+
+main .img-container{
+    width: 350px;
+}
+
+main .pulau-bali{
+    width: 350px;
+    float: left;
+    margin-right: 20px;
+}
+
+
+main .left-right-content{
+    margin: 10px 0;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+
+.landing-page p{
+    margin: 10px;
+    line-height: 1.4em;
+}
+
+.landing-page h2{
+    margin: 40px 0 0 0;
+    font-size: 1.8em;
+}
+
+.title-center{
+    text-align: center;
+    margin-top: 25px;
+}
+
+.destinasi{
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-destinasi{
+    margin: 15px 20px 50px 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.galeri{
+    width: 275px;
+    height: 300px;
+    position: relative;
+    margin: 10px 25px 20px 0;
+    overflow: hidden;
+}
+
+.galeri img{
+    width: 275px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform .3s ease;
+}
+
+.galeri img:hover{
+    transform: scale(1.3);
+}
+
+.galeri p{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-60%, 0%);
+    color: white;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+/* footer */
+
+footer{
+    height: 100px;
+    font-size: 1.3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333333;
+    color: white;
+    margin-top: 20px;
+}
+
+/* PAGE DESTINASI */
+
+/* nav utama tanpa background */
+.no-background{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* main */
+.judul-destinasi{
+    text-align: center;
+    margin-top: 80px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+
+.list-container{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.list{
+    margin: 30px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.list img{
+    height: 350px;
+    width: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.list article{
+    text-align: right;
+    width: 550px;
+    line-height: 1.5em;
+    align-self: center;
+    padding-bottom: 25px;
+}
+
+article p{
+    margin: 20px 0;
+}
+
+.list article h2{
+    margin-bottom: 30px;
+}
+
+/* PAGE TIAP-TIAP DESTINASI */
+h2.border-bottom{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 20px;
+    margin: 10px 0;
+    padding-top: 15px;
+}
+
+.lokasi{
+    width: 500px;
+    height: 400px;
+    padding: 3px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.lokasi iframe{
+    width: 500px;
+    height: 400px;
+}
+
+.container-galeri ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container-galeri ul li {
+    width: 350px;
+    height: 500px;
+    overflow: hidden;
+    margin: 30px;
+    margin-left: 0;
+}
+
+.container-galeri img{
+    cursor: pointer;
+    width: 350px;
+    height: 500px;
+    object-fit: cover;
+    transition: transform .3s ease;
+}
+
+.container-galeri img:hover{
+    transform: scale(1.3);
+} 
+
+/* POP UP GALERI */
+div.popup-img{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+div.popup-img span{
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    cursor: pointer;
+    font-size: 3em;
+    color: white;
+    z-index: 100;
+}
+
+div.popup-img img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    object-fit: cover;
+    max-width: 90vh;
+}
+
+.informasi{
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 300px;
+    align-items: center;
+}
+
+.informasi p{
+    margin-left: 5px;
+}
+
+.kontak h2{
+    margin-top: 70px;
+}
+
+.informasi img{
+    width: 80px;
+    display: inline;
+}
+
+.alamat{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width:1300px){
+    .main-nav ul{
+        width: 25%;
+    }
+
+    .landing-page h2{
+        text-align: center;
+    }
+
+    .nav-destinasi{
+        justify-content: center;
+    }
+
+    .galeri{
+        margin: 0;
+    }
+
+    .galeri:nth-child(2n+1){
+        margin: 0 30px 30px 0;
+    }
+
+    .list{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .list article{
+        margin-top: 30px;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width:900px){
+    .main-nav ul {
+        width: 30%;
+    }
+
+    .nav-destinasi .galeri{
+        margin: 30px;
+    }
+
+    .nav-destinasi{
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .main-nav ul{
+        width: 40%;
+    }
+    div.popup-img img{
+        width: 90%;
+    }
+    main{
+        width: 90%;
+    }
+    .list img{
+        width: 80%;
+    }
+    .list article{
+        width: 80%;
+    }
+    main.destinasiWisata{
+        margin: 20px 5%;
+        text-align: center;
+    }
+    main.kontak{
+        margin: 20px 5%;
+    }
+    footer{
+        font-size: 1em;
+    }
+    .alamat iframe {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:576px){
+    .main-nav{
+        font-size: 0.7em;
+    }
+
+    
+    .main-nav ul{
+        width: 50%;  
+    }
+
+    .main-nav ul li a{
+        padding: 0;
+    }
+
+    .top-background, .top-background img{
+        height: 50vh;
+    }
+
+    main .pulau-bali{
+        margin: 10px 0;
+        width: 90%;
+    }
+    .container-galeri .mid-responsive li {
+        margin: 30px 0;
+        width: 80%;
+        height: 90%;
+    }
+    .container-galeri .mid-responsive li img{
+        width: 80%;
+        height: 90%;
+    }
+}
+
+@media screen and (max-width:1600px){
+    main.landing-page{
+        margin: 20px 8%;
+    }
+    h2.mid-responsive{
+        text-align: center;
+    }
+    .mid-responsive{
+        width: 100%;
+        justify-content: center;
+    }
+    .mid-responsive img{
+        align-items: center;
+    }
+    .lokasi {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:1100px){
+    .container-galeri .mid-responsive li{
+        margin:30px ;
+    }
+}
+
+@media screen and (max-width:1298px) and (min-width:1100px){
+    .galeri:nth-child(2n) {
+        margin: 0 30px 30px 0;
+    }
+}
